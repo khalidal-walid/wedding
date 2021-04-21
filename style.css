@@ -1,0 +1,81 @@
+:root {
+  --bg1: #E6D0F8;
+  --bg2 : #6B1788;
+  --button: #F2DC16; 
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  background: linear-gradient(100deg, #5F0A87, #A4508B);
+  font-family: 'Roboto', sans-serif;
+  /* background-color: #5F0A87; */
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background: var(--button);
+  border-radius: 5%;
+  letter-spacing: 8px;
+  margin: 2em 0;
+}
+
+.header {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.top {
+  margin-top: 10em;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.name {
+  margin: 1em;
+  text-align: center;
+  font-size: 3em;
+} 
+
+.name h1 {
+  font-family: 'Phantom Rider', sans-serif;
+}
+
+.name h2 {
+  font-family: 'Diary Amily', sans-serif;                                              
+}
+
+.bottom {
+  margin: 1em;
+  padding: 0 30em;
+  text-align: center; 
+  font-size: 0.7em;
+}
+
+.bottom h1 {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.bottom h1:before, h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid white;
+  margin: auto;
+}
+
+.bottom h1:before {
+  margin-right: 3em;
+}
+.bottom h1:after {
+  margin-left: 3em;
+}
