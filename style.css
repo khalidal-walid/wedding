@@ -1,3 +1,9 @@
+/* desktop = 1200px
+laptop = 1024px
+tablet = 768px
+phone = 480px */
+
+
 :root {
   --bg1: #E6D0F8;
   --bg2 : #6B1788;
@@ -8,9 +14,13 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-  background: linear-gradient(100deg, #5F0A87, #A4508B);
+  /* background: linear-gradient(100deg, #5F0A87, #A4508B); */
   font-family: 'Roboto', sans-serif;
-  /* background-color: #5F0A87; */
+  letter-spacing: 3px;
+}
+
+img {
+  width: 7%;
 }
 
 button {
@@ -21,6 +31,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 900;
   cursor: pointer;
   background: var(--button);
   border-radius: 5%;
@@ -28,9 +39,10 @@ button {
   margin: 2em 0;
 }
 
-.header {
+.first {
   color: white;
-  letter-spacing: 3px;
+  background: linear-gradient(100deg, #5F0A87, #A4508B);
+  overflow: auto;
 }
 
 .top {
@@ -76,6 +88,169 @@ button {
 .bottom h1:before {
   margin-right: 3em;
 }
+
 .bottom h1:after {
   margin-left: 3em;
+}
+
+.second {
+  text-align: center;
+  background: var(--bg1);
+  overflow: auto;
+}
+
+.aturcara {
+  margin-top: 5em;
+  font-size: 0.6em;
+}
+
+.aturcara h1 {
+  margin: 1em;
+  margin-bottom: 1.5em;
+  color: #5E5E5E;
+}
+
+.schedule h3 {
+  font-weight: 100;
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.schedule h2 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.third {
+  text-align: center;
+  background: var(--bg2);
+  overflow: auto;
+  color: white;
+}
+
+.third h1 {
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg2);
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-bottom: 3em;
+}
+
+.info > div {
+  border: 2px solid var(--button);
+  border-radius: 5%;
+  margin: 1em;
+  padding: 0 1em;
+}
+
+.info h3 {
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.info h2 {
+  font-size: 1.3em;
+} 
+
+.icon {
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  background: var(--button);
+  border-radius: 5%;
+  margin: 1em 1em;
+}
+
+.fourth {
+  text-align: center;
+  background-color: var(--bg1);
+  overflow: auto;
+  padding: 0 20em;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.table thead th {
+	padding: 0.8rem;
+}
+
+.table tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.table tbody tr td {
+	padding: 0.8rem 1.2rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #CDCDCD;
+}
+
+@media screen and (max-width: 960px) {
+  button {
+    font-size: 10px;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+  }
+  .top {
+    font-size: 5px;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+  .bottom {
+    font-size: 5px;
+    padding: 0 20em;
+  }
+  .bottom h1:before {
+    margin-right: 1.5em;
+  }
+  .bottom h1:after {
+    margin-left: 1.5em;
+  }
+  .aturcara h1 {
+    font-size: 1.5em;
+  }
+  .schedule h3, .info h3 {
+    font-size: 1em;
+  }
+  .schedule h2, .info h2 {
+    font-size: 1.1em;
+  }
+  .info {
+    flex-direction: column;
+    padding: 3em;
+  }
+  .fourth {
+    padding: 0 6em;
+  }
+  .table {
+    font-size: 0.8em;
+  }
 }
